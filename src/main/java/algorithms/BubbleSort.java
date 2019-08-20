@@ -7,7 +7,6 @@ public class BubbleSort implements ISort {
     private int[] array;
 
     public BubbleSort(int[] array) {
-
         this.array = array;
     }
 
@@ -24,8 +23,9 @@ public class BubbleSort implements ISort {
 
     public void sort2() {
         int n = array.length - 1;
-        int lastSwapPos = 0;
+        int lastSwapPos;
         do {
+            lastSwapPos = 0;
             for (int j = 0; j < n; j++) {
                 if (array[j] > array[j + 1]) {
                     swap(j);
@@ -40,10 +40,6 @@ public class BubbleSort implements ISort {
         int temp = array[i];
         array[i] = array[i + 1];
         array[i + 1] = temp;
-    }
-
-    public int[] getArray() {
-        return array;
     }
 
     public void setArray(int[] array) {

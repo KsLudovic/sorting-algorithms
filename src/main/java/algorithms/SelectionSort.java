@@ -31,10 +31,6 @@ public class SelectionSort implements ISort {
         array[minPos] = temp;
     }
 
-    public int[] getArray() {
-        return array;
-    }
-
     public void setArray(int[] array) {
         this.array = array;
     }

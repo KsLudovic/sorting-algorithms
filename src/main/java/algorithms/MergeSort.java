@@ -29,7 +29,7 @@ public class MergeSort implements ISort {
         int index = left;
         int leftStart = left;
         int leftEnd = mid;
-        int rightStart = mid+1;
+        int rightStart = mid + 1;
         int rightEnd = right;
 
         while (leftStart <= leftEnd && rightStart <= rightEnd) {
@@ -45,10 +45,6 @@ public class MergeSort implements ISort {
         System.arraycopy(array, leftStart, temp, index, leftEnd - leftStart + 1);
         System.arraycopy(array, right, temp, index, rightEnd - rightStart + 1);
         System.arraycopy(temp, left, array, left, right - left + 1);
-    }
-
-    public int[] getArray() {
-        return array;
     }
 
     public void setArray(int[] array) {

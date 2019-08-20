@@ -72,10 +72,6 @@ public class QuickSort implements ISort {
         array[left] = temp;
     }
 
-    public int[] getArray() {
-        return array;
-    }
-
     public void setArray(int[] array) {
         this.array = array;
     }
